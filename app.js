@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 //connection to database
-mongoose.connect("mongodb://localhost:27017/todolist",{useNewUrlParser:true});
+mongoose.connect("mongodb+srv://geetesh:Test123@cluster0.j5rgb6r.mongodb.net/todolist",{useNewUrlParser:true});
 
 //Defining the schema
 const itemschema = mongoose.Schema({
