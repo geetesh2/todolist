@@ -15,7 +15,7 @@ app.use(express.static("public"));
 //connection to database
 mongoose.connect("mongodb+srv://geetesh:Test123@cluster0.j5rgb6r.mongodb.net/todolist",{useNewUrlParser:true});
 
-//Defining the schema
+//Defining the schema`
 const itemschema = mongoose.Schema({
     name : String
 });
@@ -152,6 +152,6 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-app.listen(80, function() {
+app.listen(3000, function() {
   console.log("Server started");
 });
