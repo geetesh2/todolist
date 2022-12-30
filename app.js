@@ -152,6 +152,6 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-app.listen(80, function() {
+app.listen(3000, function() {
   console.log("Server started");
 });
